@@ -1,0 +1,30 @@
+
+
+
+
+class UberPriceCalculator {
+    constructor(baseFare, costPerMinute, costPerMile,tips = 5) {
+        this.baseFare = baseFare;
+        this.costPerMinute = costPerMinute;
+        this.costPerMile = costPerMile;
+        this.tips = tips;
+    }
+
+    calculatePrice(distance, time, surgeMultiplier = 1) {
+        const fare = this.baseFare + (this.costPerMinute * time) + (this.costPerMile * distance + this.tips);
+        return fare * surgeMultiplier;
+    }
+}
+const calculator = new UberPriceCalculator(2.5, 0.3, 1.75);
+const distance = 10; 
+const time = 20; 
+const surgeMultiplier = 1.5;
+const tips =  5
+
+const price = calculator.calculatePrice(distance, time, surgeMultiplier);
+console.log("Estimated Uber Price:", price.toFixed(2));
+
+
+
+                                   Thank You
+....................................***.............................................. 

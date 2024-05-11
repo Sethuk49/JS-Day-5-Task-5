@@ -1,0 +1,45 @@
+
+
+
+
+class Person {
+    constructor(firstName, lastName, age, gender) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.gender = gender;
+    }
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+    getAge() {
+        return this.age;
+    }
+    getGender() {
+        return this.gender;
+    }
+    setFirstName(firstName) {
+        this.firstName = firstName;
+    }
+    setLastName(lastName) {
+        this.lastName = lastName;
+    }    setAge(age)
+    {
+        this.age = age;
+    }
+    setGender(gender) {
+        this.gender = gender;
+    }
+   toString() {
+        return `${this.getFullName()}, Age: ${this.age}, Gender: ${this.gender}`;
+    }
+}
+const person1 = new Person("Sethu","Ram", 21, "Male");
+console.log(person1.toString());
+
+
+
+                          Thank You
+
+
+............................***...................................... 

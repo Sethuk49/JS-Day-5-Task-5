@@ -1,0 +1,56 @@
+
+
+
+
+
+
+class Circle {
+    constructor(radius = 1.0, color = "red") {
+        this._radius = radius;
+        this._color = color;
+    }
+
+    getRadius() {
+        return this._radius;
+    }
+
+    setRadius(radius) {
+        this._radius = radius;
+    }
+
+    getColor() {
+        return this._color;
+    }
+
+    setColor(color) {
+        this._color = color;
+    }
+
+    toString() {
+        return `Circle[radius=${this._radius}, color=${this._color}]`;
+    }
+
+    getArea() {
+        return Math.PI * Math.pow(this._radius, 2);
+    }
+
+    getCircumference() {
+        return 2 * Math.PI * this._radius;
+    }
+}
+
+const circle1 = new Circle();
+console.log(circle1.toString()); 
+
+const circle2 = new Circle(3.5, "blue");
+console.log(circle2.getArea()); 
+console.log(circle2.getCircumference()); 
+console.log(circle2.toString()); 
+
+
+                                 
+                                   Thank You
+
+
+
+....................................***...............................................
